@@ -1,10 +1,10 @@
 num = int(input("Numero para evaluar: "))
 contador = 0
 
-for x in range(num-2):
-	if (num%(x+2)) != 0:
+for x in range(num):
+	if num%(x+1) == 0:
 		contador += 1
-if contador != 0:
-	print(f"El numero {num} NO es primo")
+if contador > 2:
+	print(f"El número {num} NO es primo")
 else:
-	print(f"El numero {num} es primo")
+	print(f"El número {num} SI es primo")
