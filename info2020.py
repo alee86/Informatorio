@@ -1,26 +1,21 @@
-numerador = int(input("inresar el numerador: "))
-denominador = int(input("Ingresar el denominador: "))
-resultado = 0
-
-while  numerador >= denominador:
-	numerador = numerador - denominador
-	resultado = resultado + 1
-	
-print(f"El cociente es: "{resultado})
-print(f"El resto es: "{numerador})
+""""
+dic = {1:{1:['hola','chau'],2:['como','estas']},2:{1:['donde','estas'],2:['cosas','locas']}}
 
 
+for k,v in dic.items():
+	print(k)
+	for z,w in v.items():
+		print(z)
+		for r in w:
+			print(r)
 
-'''
-a = int(input("Tirate un número wachín: "))
-b = int(input("Dividilo por: "))
+"""
 
-control = b
-resultado = 0
+dic = {1:{1:['hola','chau'],2:['como','estas']},2:{1:['donde','estas'],2:['cosas','locas']}}
+diccc = 
 
-while control <= a:
-  control = control + b
-  resultado = resultado + 1
-
-print("¡El resultado es ", resultado, " pibe! aprende a dividir gil.")
-'''
+for k,v in dic.items():
+	for z,w in v.items():
+		print(z)
+		for r in w:
+			print(r)
