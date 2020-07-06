@@ -2,19 +2,22 @@
 Escriba un algoritmo que permita cargar una lista. Y que luego, una vez cargada, 
 controle y sustituya cualquier elemento negativo por 0.
 '''
-numero = 0
+cola = []
 lista = []
 respuesta =""
 
-
 while respuesta != 'n':
 
-	numeros = int(input('Ingrese un número: '))
-	lista.append(numeros)
+	elementos = input('Ingrese un elemento a la cola: ')
+	cola.append(elementos)
 
 	respuesta = input("quiere continuar? S/N: ").lower()
 
-for i, element in enumerate(lista):
-	if element < 0:
-		lista[i] = 0
+print(cola)
+
+for i in cola:
+	lista.append(i)
+#tambien puedo usar el metodo copy()
+
+lista = cola.copy()
 print(lista)
