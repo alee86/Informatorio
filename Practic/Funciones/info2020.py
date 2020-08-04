@@ -1,11 +1,14 @@
-numero = int(input("Dígame cuántas palabras tiene la lista: "))
+def mediana(lista):
+	for i in range(0, len(lista)): 
+		lista[i] = int(lista[i]) 
+	
+	print(lista)
 
-if numero < 1:
-    print("¡Imposible!")
-else:
-    lista = []
-    for i in range(numero):
-        print("Dígame la palabra", str(i + 1) + ": ", end="")
-        palabra = input()
-        lista += [palabra]
-    print("La lista creada es:", lista)
+
+num = input('Inserte 3 numeros separados por espacio: ')
+
+lista = num.split()
+
+valor_medio = mediana(lista)
+
+print(valor_medio[1])

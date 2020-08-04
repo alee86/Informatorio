@@ -6,3 +6,11 @@ Escriba una función que tome las longitudes de los dos lados más cortos de un 
  lea las longitudes de los lados más cortos de un triángulo rectángulo del usuario, use su 
  función para calcular la longitud de la hipotenusa y muestre el resultado.
 '''
+import funciones
+
+a = int(input('ingrese el valor de a: '))
+b = int(input('ingrese el valor de b: '))
+
+diagonal = funciones.pitagoras(a, b)
+
+print(f'La hipotenusa es {round(diagonal,2)}')
